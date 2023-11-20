@@ -15,8 +15,8 @@ from requests_html import HTMLSession, AsyncHTMLSession
 
 
 base_url = "https://www.vicinityclo.de/products/akimbo-lows-black-phantom?variant=43836856107274"  # Akimbo Lows Black Phantom in size 43
-driver = webdriver.Firefox()
-driver.get(base_url)
+driver = webdriver.Firefox()    # Open Firefox
+driver.get(base_url)    # Open the base url
 
 
 atc_btn = driver.find_element(by='id', value='ProductSubmitButton-template--18044749644042__main')  # Find the "Add To Cart" button
