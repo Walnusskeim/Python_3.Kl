@@ -28,7 +28,6 @@ def database_setup():  # Connecting to the Database
     global mycursor
     mycursor = mydb.cursor()
     mycursor.execute("CREATE DATABASE IF NOT EXISTS Zahlensummierer;USE Zahlensummierer")
-    #mycursor.execute("USE Zahlensummierer")
     mycursor.execute("CREATE TABLE IF NOT EXISTS Users (Name varchar(20), Nummern INT, Summe INT)")
 
 
