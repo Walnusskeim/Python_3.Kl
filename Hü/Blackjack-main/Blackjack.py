@@ -32,6 +32,9 @@ creds = ("")
 
 
 def login():
+    """
+    Um den Username aus dem Entry in Zeile 84 zu bekommen
+    """
     global creds
     creds = username.get()
     print(creds)
@@ -39,6 +42,9 @@ def login():
 
 
 def highscoreshow():
+    """
+    Das Fenster, in welchem die Scores gezeigt werden
+    """
     hiscrwindow = ctk.CTk()
     hiscrwindow.geometry("727x250")
     
@@ -95,7 +101,9 @@ logwindow.mainloop()
 
 class cards:
     def function(self):
-        # Erstellt eine Liste mit allen Karten
+        """
+        Erstellt eine Liste mit allen Karten
+        """
         path = "cards"
         self.filelist = []
         for root, dirs, files in os.walk(path):         # Geht durch alle Dateien im Ordner
