@@ -23,8 +23,9 @@ def buy_stock(Player, stock, amount):
     if stock.current_value * amount > Player.money:
         print("Hallo stop du hast nicht genug Geld!")
         return
+
     Player.stocks[stock] = amount + Player.stocks.get(stock, 0)
-    Player.money -= stock.current_value * amount
+    Player.money -= round(stock.current_value * amount, 2)
     print(Player.stocks)
     print(Player.money)
 
